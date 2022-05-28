@@ -1,0 +1,236 @@
+
+body {
+    font-family: "TT Lakes", sans-serif;
+    background-color: #F8F8F8;
+    min-width: 320px;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+}
+
+.upperMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    height: 88px;
+    border-bottom: 1px solid #D9FFF5;
+    background-color: white;    
+}
+
+
+
+.upperMenu__divider {
+   margin-right: auto;
+   margin-left: 20px;
+}
+
+.upperMenu__burger, .upperMenu__logo {
+    margin-left: 20px;
+}
+
+.upperMenu__checkstatus {
+    margin-right: 25px;
+}
+
+.upperMenu__profile, .upperMenu__checkstatus, .upperMenu__repair, .upperMenu__dividertwo, .upperMenu__chat, .call {
+    margin-left: 15px;
+}
+
+.title {
+    display: flex; 
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+.highlight {
+    border-radius: 0.05em;
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 12px;
+    line-height: 1px;
+    margin-bottom: 40px;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.service img, p {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    
+
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    font-weight: 500;
+
+}
+
+.nav-links li {
+    /*padding-right: 20px;*/
+    list-style: none;
+}
+
+.nav-links a:link {
+    color: #7E7E82;
+    text-decoration: none;
+    padding: 5px 16px;
+    width: 200px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.nav-links a:visited {
+    background-color: #fff;
+    color: #7E7E82;
+    border-radius: 6px;
+    outline: 2px solid #B8FFEC;
+}
+
+.nav-links a:hover {
+    background-color: #fff;
+    border-radius: 6px;
+    outline: 2px solid #B8FFEC;
+    padding-left: 16px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+     transition: all .2s;  
+}
+
+.nav-links a:active {
+    color: black;
+    background-color: #fff;
+    border-radius: 6px;
+    outline: 2px solid #B8FFEC;
+}
+
+main {
+    display: flex;
+    align-self: start;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    min-width: 270px;
+    line-height: 18px;
+    /* max-width: 490px; */
+    font-size: 14px;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.post-two {
+    margin-left: 20px;
+    line-height: 18px;
+    min-width: 270px;
+    /* max-width: 490px; */
+    font-size: 14px;
+}
+
+.readmore {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.readmore-btn {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    font-weight: 500;
+    border: none;
+    margin: 10px 10px;
+
+}
+
+.aside__img img {
+    width: 100%;
+}
+
+
+@media (min-width: 767px) {
+    .aside__img {
+        width: 45%;
+        padding: 20px 24px 14px 0;
+    } 
+    .aside__img img {
+    border-radius: 5px;
+    }
+   .post p {
+       width: 312px;
+   }  
+}
+
+@media (max-width: 767px) { 
+    .upperMenu__dividertwo, .upperMenu__profile, .upperMenu__chat, .call {
+        display: none;
+        }       
+}
+
+@media (min-width: 1120px) {
+    .upperMenu {
+        display: none;
+    }
+    
+    .nav__section {
+        flex-wrap: wrap;
+    }
+    .nav {            
+        overflow-x: auto;             
+    }
+    .post p {
+        width: 460px;
+    }
+    .post-two {
+        width: 460px;
+    }
+
+    .aside__img {
+        width: 40%;
+    }
+    .aside__img img {
+        border-radius: 5px;
+        margin-left: 50px;
+        }
+       
+}
+
+@media (max-width: 1120px) {
+    .service {
+        display: none;
+    }
+    .nav-links {            
+        overflow-x: auto;             
+    }
+    .post-two {
+        display: none;    
+    }
+    
+}
